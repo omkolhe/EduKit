@@ -202,7 +202,7 @@ def performAction( yc, rc, bc, action, drag, perform):
 	 	cursor[0] = 4*(yc[0]-110)
 		cursor[1] = 4*(yc[1]-120)
 		
-		if action == 'Stop':
+		if action == 'stop':
 			print 'Stop'
 
 		elif action == 'left':

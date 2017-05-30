@@ -1,5 +1,16 @@
 #include <SoftwareSerial.h>
 
+
+/**
+ * Connections.
+ * The Rx of the bluetooth Module HC-05 should be connected to pin 11.
+ * The Tx of HC-05 should be connected to pin 10.
+ * Pin 2,3,4,5,7,8 should be connected to the corresponding pin on the motor driver ciruit
+ * The motor fited on the left should be connected to 2,3,4 pins 
+ * The motor fited on the right should be connected to 5,7,8 pins
+ */
+
+ 
 // Motor 1 control pins defined here Left Motor
 #define  M1_IN1   2
 #define  M1_IN2   4
@@ -8,6 +19,7 @@
 #define  M2_IN1   7
 #define  M2_IN2   8
 #define  M2_EN    5
+
 
 SoftwareSerial terminal(10,11);// 10 -- Rx , 11 -- Tx of Bluetooth Module
 char direction;

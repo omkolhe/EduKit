@@ -265,7 +265,8 @@ while(1):
 	
 	cv2.imshow('Frame', frame)
 
-	if k == 27:
+if k == 27:
 		break
 
 cv2.destroyAllWindows()
+

@@ -98,7 +98,7 @@ void loop()
       digitalWrite(M2_IN1, LOW);
       digitalWrite(M2_IN2, LOW);
       digitalWrite(M2_EN, LOW);
-      Serial.println("Stop");      
+      //Serial.println("Stop");      
   }
 
 }

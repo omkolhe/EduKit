@@ -184,10 +184,10 @@ def chooseAction(yc, rc, bc):
 			out[0] = 'left'
 			return out
 		elif distance(yc,rc)>40 and rc[1]-bc[1]>120:
-			out[0] = 'reverse'
+			out[0] = 'rev'
 			return out	
 		elif bc[1]-rc[1]>110:
-			out[0] = 'forward'
+			out[0] = 'for'
 			return out
 		else:
 			return out
@@ -215,11 +215,11 @@ def performAction( yc, rc, bc, action, drag, perform):
 			print 'Right'
 			ser.write('D')
 		
-		elif action == 'forward':
+		elif action == 'for':
 			print 'Forward'
 			ser.write('W')
 
-		elif action == 'reverse':
+		elif action == 'rev':
 			print 'Reverse'
 			ser.write('S')
 
